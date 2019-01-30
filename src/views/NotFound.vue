@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="xfn-notfound">
    <h1>NotFound</h1>
     </div>
 </template>
@@ -12,6 +12,9 @@
     }
 </script>
 
-<style scoped>
-
+<style lang="scss">
+   .xfn-notfound{
+       text-align: center;
+       padding-top:200px;
+   }
 </style>
