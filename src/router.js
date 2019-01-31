@@ -21,6 +21,8 @@ import DishDetele from './views/DishDetele.vue'
 
 import OrderList from './views/OrderList.vue'
 import Security from './views/Security.vue'
+
+import MainHeader from './components/MainHeader.vue'
 Vue.use(Router)
 //整个项目的路由词典:访问路径 <=>视图组件
 export default new Router({
@@ -49,6 +51,8 @@ export default new Router({
 
         {path:'/order/list',component:OrderList},
         {path:'/security',component:Security},
+
+        {path:'/MainHeader',component:MainHeader},
       ]
   },
     {path:'*',component:NotFound},
