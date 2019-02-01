@@ -15,7 +15,7 @@
     </el-breadcrumb>
     <br>
     <el-row>
-        <el-col v-for="(t,i) in tableList" :key="i" :xs="12" :sm="8" :md="6" :lg="4" :xl="2">{{n+1}}
+        <el-col v-for="(t,i) in tableList" :key="i" :xs="12" :sm="8" :md="6" :lg="4" :xl="2">
             <xfn-table :data="t"></xfn-table>
         </el-col>
     </el-row>
@@ -32,6 +32,15 @@ data(){
     return{
         tableList:[]
     }
+},
+mounted(){
+    //加载桌台列表
+    var url=this.$store.state.globalSetting.apiUrl+'/admin/table';
+    this.$axios.get(url).then(({data})=>{
+        this.tableList=data;
+    }).catch((err)=>{
+        console.log(err);
+    })
 }
 };
 </script>

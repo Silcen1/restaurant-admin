@@ -38,7 +38,7 @@
               <span>菜品管理</span>
             </template>
             <el-menu-item-group>
-              <el-menu-item index="/dish/list">商品列表</el-menu-item>
+              <el-menu-item index="/dish/list">菜品列表</el-menu-item>
               <el-menu-item index="/dish/add">添加菜品</el-menu-item>
               <el-menu-item index="/dish/delete">删除菜品</el-menu-item>
               <el-menu-item index="/dish/update">修改菜品</el-menu-item>
